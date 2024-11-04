@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Minerva;
+  src: url(./MinervaModernBlack.ttf);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.green_btn {
+  font-family: Minerva;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  background-color: #3bb19b;
+  border-radius: 20px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 3vh;
+  cursor: pointer;
+  margin-top: 2vw;
+}

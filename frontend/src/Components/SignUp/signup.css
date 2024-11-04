@@ -1,0 +1,207 @@
+@font-face {
+  font-family: mothwing;
+  src: url(./mothwing-demo.otf);
+}
+
+/* //////////////////// */
+.success_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.success_msg {
+	background-color: #5cdd5c;
+}
+/* //////////////////// */
+#header {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./sign.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#form {
+  height: 34vw;
+  width: 29vw;
+  padding: 15px 40px;
+  border-radius: 10px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.251);
+}
+
+#form h1 {
+  font-family: mothwing;
+  font-size: 5vh;
+  text-align: center;
+  padding: 0.2vw 0;
+}
+
+#form #headings {
+  font-family: mothwing;
+}
+
+#headings .inpt {
+  display: flex;
+  height: 3vw;
+  width: 23vw;
+  font-size: 2.5vh;
+  font-family: mothwing;
+  border-radius: 40px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: 0.6vh;
+  margin-bottom: 1.5vw;
+  padding: 1vh 2vh;
+}
+
+#age {
+  height: 3vw;
+  width: 15vw;
+  font-family: mothwing;
+  font-size: 2.5vh;
+  border-radius: 40px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1vw;
+  padding: 1vh 2vh;
+}
+
+.age-gender {
+  font-size: 2.8vh;
+  gap: 1.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.genderlebel {
+  font-family: mothwing;
+}
+
+.genderlebel .mf {
+  display: flex;
+  padding: 0.8vh 0;
+  font-size: 1.2vw;
+}
+
+.mf label {
+  font-family: mothwing;
+}
+
+.inpt::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login .link {
+  font-size: 1.5vw;
+  padding-right: 2vw;
+  text-decoration: none;
+  color: rgb(255, 38, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.login .link h5 {
+  font-family: mothwing;
+}
+
+.login .link:hover {
+  color: #7fe4f8;
+}
+
+#form button {
+  height: 3vw;
+  width: 20vw;
+  font-family: mothwing;
+  font-size: 2vw;
+  font-weight: 700;
+  background: white;
+  border-radius: 40px;
+  color: #333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(8%, 18%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form button:hover {
+  background-color: #9edce9;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  #header {
+    width: 100vw;
+  }
+
+  #form {
+    height: 65vh;
+    width: 40vw;
+    padding: 15px 5vw;
+  }
+
+  #form h1 {
+    font-size: 4vw;
+    padding: 2.2vw 0;
+  }
+
+  #headings .inpt {
+    height: 5vh;
+    width: 28vw;
+    font-size: 2.8vh;
+    margin-bottom: 1.5vw;
+    padding: 1vh 2vh;
+  }
+
+  #age {
+    height: 5vh;
+    width: 10vw;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    padding: 1vw 2vw;
+  }
+
+  .age-gender {
+    gap: 2vw;
+  }
+
+  .genderlebel {
+    font-size: 2vh;
+  }
+
+  .genderlebel .mf {
+    font-size: 2vw;
+  }
+
+  .login .link {
+    font-size: 2vh;
+    padding-right: 2vw;
+  }
+
+  #form button {
+    position: relative;
+    height: 5vh;
+    width: 25vw;
+    font-size: 3vw;
+    transform: translate(1.5vw, 1vw);
+  }
+}

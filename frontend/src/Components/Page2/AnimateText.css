@@ -1,0 +1,213 @@
+@font-face {
+  font-family: ATh1;
+  src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+#animateDiseases {
+  min-height: 100vh;
+  width: 100%;
+  padding: 6vw 0;
+  background-color: #efeae3;
+  position: relative;
+}
+
+.contain {
+  white-space: nowrap;
+  display: inline-block;
+  animation: TextAnimation 10s linear infinite;
+}
+
+#animateText {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+#animateText::-webkit-scrollbar {
+  display: none;
+}
+
+#animateText h1 {
+  font-family: ATh1;
+  font-size: 11vw;
+  display: inline-block;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  margin: 1vw 2vw;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #73e6ff;
+}
+
+@keyframes TextAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* --------------------------------- Text --------------------------------- */
+
+@font-face {
+  font-family: p2Img;
+  font-weight: 250;
+  src: url(./mothwing-demo.otf);
+}
+
+@font-face {
+  font-family: p2h1;
+  src: url(./CampuniTest-Medium.otf);
+}
+
+#page2 {
+  height: 80vh;
+  width: 100%;
+  padding: 6.3vw;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+}
+
+#page2 h1 {
+  font-family: p2h1;
+  font-size: 3.7vw;
+  width: 68%;
+  line-height: 4vw;
+}
+
+.page2-img {
+  width: 20%;
+  margin-top: 10%;
+}
+
+.page2-img img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10vw;
+}
+
+.page2-img p {
+  font-family: p2Img;
+  font-weight: 250;
+  margin-top: 2vw;
+  font-size: 0.9vw;
+  width: 42vh;
+}
+
+/* --------------------------------- BG Effect --------------------------------- */
+#animateDiseases #bg-effect {
+  height: 33vw;
+  width: 33vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #72e6ff, #007efd);
+  top: 58.5%;
+  left: 16.5%;
+  filter: blur(20px);
+  animation-name: effect;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes effect {
+  from {
+    filter: blur(20px);
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    filter: blur(40px);
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+/* --------------------------------- Responsiveness ---------------------------------*/
+
+@media (max-width: 767px) {
+  #animateDiseases {
+    min-height: 100vh;
+    width: 100%;
+    padding: 6vw 0;
+    background-color: #efeae3;
+    position: relative;
+  }
+
+  #animateText {
+    white-space: nowrap;
+    overflow: auto;
+  }
+
+  #animateText::-webkit-scrollbar {
+    display: none;
+  }
+
+  #animateText h1 {
+    font-family: ATh1;
+    font-size: 13vw;
+    display: inline-block;
+  }
+
+  .circle {
+    height: 6vw;
+    width: 6vw;
+    margin: 2vw 2vw;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #73e6ff;
+  }
+
+  /* --------------------------------- For Text --------------------------------- */
+  #page2 {
+    height: 90vh;
+    width: 100%;
+    /* padding: 6.3vw; */
+    padding: 8vw 4vw;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+  }
+
+  #page2 h1 {
+    font-size: 5vw;
+    width: 90vw;
+    line-height: 5vw;
+  }
+
+  #page2 .page2-img {
+    width: 40vw;
+    margin-top: -2vw;
+  }
+
+  #page2 .page2-img img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10vh;
+  }
+
+  #page2 .page2-img p {
+    font-weight: 250;
+    margin-top: 4vw;
+    font-size: 2.5vw;
+    width: 90vw;
+  }
+
+  /* --------------------------------- BG Effect --------------------------------- */
+  #animateDiseases #bg-effect {
+    height: 65vw;
+    width: 65vw;
+    top: 39.5vw;
+    left: 33.5vw;
+  }
+}

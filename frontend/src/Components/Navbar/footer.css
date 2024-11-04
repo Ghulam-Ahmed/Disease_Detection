@@ -1,0 +1,416 @@
+@font-face {
+  font-family: La;
+  src: url(./CampuniTest-Medium.otf);
+}
+
+@font-face {
+  font-family: mothwing;
+  src: url(./mothwing-demo.otf);
+}
+
+@font-face {
+  font-family: Bu;
+  src: url(./BaguedeFree-Regular.otf);
+}
+
+.page5 {
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  overflow: hidden;
+  position: sticky;
+  flex-direction: column;
+  background-color: black;
+  /* position: relative; */
+  /* border: 2px solid red; */
+  /* z-index: 10; */
+  /* align-items: flex-end;
+    text-align: center;
+    justify-content: center; */
+}
+
+#footer {
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* left: 0;
+  right: 0;
+  padding: 0vw 2vw; */
+}
+
+/* .footer-top {
+  height: 5vh;
+  width: 0%;
+  background-color: rgb(0, 179, 255);
+} */
+
+.top {
+  height: 45vw;
+  width: 100vw;
+  padding-top: 12vh;
+  z-index: 3;
+  margin: 3px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: #73e6ff; */
+  /* border: 2px solid red; */
+}
+
+.page5 .bottom {
+  padding-bottom: 8vw;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  /* padding: 0 0; */
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  /* border: 2px solid blue; */
+  /* background-color: #73e6ff; */
+}
+
+.left {
+  font-family: La;
+  padding-left: 12vh;
+  padding-bottom: 5vh;
+}
+
+.left a {
+  text-decoration: none;
+  color: white;
+}
+
+.left h1 {
+  font-family: La;
+}
+
+.right {
+  padding-right: 5vw;
+  padding-bottom: 3vw;
+}
+
+.right .p1 {
+  font-family: La;
+  font-size: 3.3vh;
+}
+
+.email {
+  height: 8vh;
+  width: 44vh;
+  font-family: mothwing;
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid #ffffffb5;
+}
+
+input::placeholder {
+  font-family: mothwing;
+  font-size: 16px;
+}
+
+.mid {
+  height: 40vw;
+  width: 100vw;
+  padding: 2vw 0;
+  /* padding-bottom: 1.5vw; */
+  /* border: 2px solid green; */
+}
+
+.mid h1 {
+  font-family: Bu;
+  font-size: 12vw;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.bottom .line {
+  width: 95vw;
+  border-top: 2px solid #ffffff71;
+}
+
+.bottom .links {
+  padding-top: 4vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* padding-right: 5vh; */
+  /* padding-left: 5vh; */
+}
+
+.bottom a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------------------animation------------------------ */
+.animation {
+  position: absolute;
+  margin-top: auto;
+  padding-top: 0%;
+  width: 100vw;
+  bottom: 0%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
+}
+
+.c1 {
+  background-color: black;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  /* background: linear-gradient(rgb(53, 31, 31),rgb(66, 26, 11)); */
+}
+
+.d1 {
+  height: 45vh;
+  width: 65%;
+  left: -25%;
+  top: -5vh;
+  filter: blur(35px);
+  position: absolute;
+  border-bottom-right-radius: 50%;
+  background: linear-gradient(#73e6ff, #73e6ff);
+  animation: anime1 4s linear none infinite alternate;
+  /* background: linear-gradient(red, orangered); */
+  /* background-color: #73e6ff; */
+  /* border-radius: 50%; */
+}
+
+.d2 {
+  top: -7vh;
+  left: 10%;
+  width: 90%;
+  height: 40vh;
+  filter: blur(30px);
+  position: absolute;
+  border-bottom-left-radius: 10%;
+  background: linear-gradient(#73e6ff, #73e6ff);
+  animation: anime2 5s linear none infinite alternate;
+  /* border-radius: 50%; */
+  /* background-color: orangered; */
+  /* background: linear-gradient(orangered, red); */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.d3 {
+  top: -5vh;
+  right: -25%;
+  height: 55vh;
+  width: 65%;
+  filter: blur(35px);
+  position: absolute;
+  border-bottom-left-radius: 40%;
+  background: linear-gradient(#73e6ff, #73e6ff);
+  animation: anime3 5s linear none infinite alternate;
+  /* border-radius: 50%; */
+  /* background-color: brown; */
+  /* background: linear-gradient(red, orangered); */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes anime1 {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: translate(0deg);
+  }
+}
+
+@keyframes anime3 {
+  from {
+    transform: rotate(7deg);
+  }
+  to {
+    transform: rotate(35deg);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(0%, -3%) skew(0);
+  }
+  to {
+    transform: translate(0%, 12%) skew(30deg);
+  }
+}
+
+/* ----------------------- Responsiveness ----------------------- */
+@media (max-width: 767px) {
+  #footer {
+    bottom: 0;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end; */
+  }
+
+  .page5 {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .top {
+    height: 95vh;
+    width: 100vw;
+    padding-top: 50vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page5 .bottom {
+    padding: 4vw 2vw;
+    /* padding: 0 0; */
+    /* justify-content: space-between; */
+    /* align-items: flex-end; */
+    /* border: 2px solid blue; */
+    /* background-color: #73e6ff; */
+  }
+
+  .left {
+    /* padding-left: 5vw;
+    padding-bottom: 5vh; */
+    padding: 0vw 5vw 5vw 5vw;
+  }
+
+  .left a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .right {
+    padding: 3vw 5vw;
+  }
+
+  .right .p1 {
+    font-size: 3.3vh;
+  }
+
+  .email {
+    height: 10vh;
+    width: 85vw;
+    font-size: medium;
+  }
+
+  input::placeholder {
+    font-size: 3vw;
+  }
+
+  #footer .mid {
+    height: 10vw;
+    width: 100vw;
+    margin-bottom: 18vh;
+    /* border: 2px solid green; */
+  }
+
+  #footer .mid .p5_h1 {
+    font-size: 12vw;
+    justify-content: center;
+  }
+
+  .bottom .line {
+    width: 90vw;
+    justify-content: center;
+  }
+
+  .bottom .links {
+    padding-top: 4vh;
+  }
+
+  .bottom a {
+    text-decoration: none;
+  }
+
+  /* ---------------------animation------------------------ */
+  .animation {
+    position: absolute;
+    margin-top: auto;
+    padding-top: 0%;
+    width: 100vw;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+  }
+
+  .c1 {
+    background-color: black;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* background: linear-gradient(rgb(53, 31, 31),rgb(66, 26, 11)); */
+  }
+
+  .d1 {
+    height: 45vh;
+    width: 65%;
+    left: -25%;
+    top: -5vh;
+    filter: blur(35px);
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    background: linear-gradient(#73e6ff, #73e6ff);
+    animation: anime1 4s linear none infinite alternate;
+    /* background: linear-gradient(red, orangered); */
+    /* background-color: #73e6ff; */
+    /* border-radius: 50%; */
+  }
+
+  .d2 {
+    top: -7vh;
+    left: 10%;
+    width: 90%;
+    height: 40vh;
+    filter: blur(30px);
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    background: linear-gradient(#73e6ff, #73e6ff);
+    animation: anime2 5s linear none infinite alternate;
+    /* border-radius: 50%; */
+    /* background-color: orangered; */
+    /* background: linear-gradient(orangered, red); */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+
+  .d3 {
+    top: -5vh;
+    right: -25%;
+    height: 55vh;
+    width: 65%;
+    filter: blur(35px);
+    position: absolute;
+    border-bottom-left-radius: 40%;
+    background: linear-gradient(#73e6ff, #73e6ff);
+    animation: anime3 5s linear none infinite alternate;
+    /* border-radius: 50%; */
+    /* background-color: brown; */
+    /* background: linear-gradient(red, orangered); */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+}

@@ -1,0 +1,131 @@
+video {
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 4vw;
+  position: relative;
+}
+
+#shape {
+  position: absolute;
+  height: 34vw;
+  width: 56vw;
+  right: 0;
+  top: 83vh;
+}
+
+#shape1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #73e6ff;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(10px);
+}
+
+#shape2 {
+  position: absolute;
+  height: 30vw;
+  width: 25vw;
+  background-color: #73e6ff;
+  border-radius: 60%;
+  filter: blur(15px);
+  animation-name: Animation2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#shape3 {
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#73e6ff, #73e6ff);
+  border-radius: 50%;
+  filter: blur(25px);
+  animation-name: Animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Animation {
+  from {
+    transform: translate(20%, -3%);
+  }
+  to {
+    transform: translate(10%, 10%);
+  }
+}
+
+@keyframes Animation2 {
+  from {
+    transform: translate(-5%, -5%);
+  }
+  to {
+    transform: translate(-10%, 10%);
+  }
+}
+
+/* --------------------------------- Responsiveness ---------------------------------*/
+
+@media (max-width: 767px) {
+  video {
+    width: 98%;
+    height: 70vh;
+    margin-top: 4vw;
+    margin-left: 1%;
+    border-radius: 15px;
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+  }
+
+  #shape {
+    position: absolute;
+    height: 55vw;
+    width: 60vw;
+    right: 0;
+    top: 88vh;
+  }
+
+  #shape1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #73e6ff;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(10px);
+  }
+
+  #shape2 {
+    position: absolute;
+    height: 30vw;
+    width: 25vw;
+    background-color: #73e6ff;
+    border-radius: 60%;
+    filter: blur(15px);
+    animation-name: Animation2;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  #shape3 {
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#73e6ff, #73e6ff);
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: Animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+}

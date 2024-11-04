@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Ch1;
+  src: url(./NeueHaasDisplayBold.ttf);
+}
+@font-face {
+  font-family: Lh3;
+  src: url(./CampuniTest-Medium.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BZQ;
+}
+
+#center {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+  padding-bottom: 2.5vw;
+  margin-top: 8%;
+}
+
+#left h3 p {
+  width: 32vw;
+  font-size: 1.9vw;
+  line-height: 2vw;
+  font-family: Lh3;
+  padding-bottom: 1vw;
+}
+
+#center h1 {
+  font-size: 9vw;
+  line-height: 8vw;
+  text-align: right;
+  padding-bottom: 2vw;
+  font-family: CH1;
+}
+
+/* --------------------------------- Responsiveness ---------------------------------*/
+
+@media (max-width: 767px) {
+  #center {
+    height: 62vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+    margin-top: 14vh;
+    flex-direction: column-reverse;
+    /* background-color: burlywood; */
+    position: relative;
+    z-index: 9;
+  }
+
+  #left h3 {
+    width: 91vw;
+    /* font-size: 2.5vh; */
+    /* line-height: 4vw; */
+    /* font-family: Lh3; */
+    /* padding-bottom: 1vw; */
+  }
+
+  #left h3 p {
+    width: 59vw;
+    font-size: 3.2vh;
+    line-height: 3.5vh;
+    padding-bottom: 5.5vw;
+  }
+
+  #center h1 {
+    font-size: 13vw;
+    line-height: 10.5vw;
+    text-align: right;
+    padding-bottom: 3vw;
+  }
+}

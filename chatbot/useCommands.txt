@@ -1,0 +1,11 @@
+python -m venv langchain-env
+.\langchain-env\Scripts\activate
+
+pip install langchain==0.0.208
+pip install dataclasses-json==0.5.14
+pip install ipykernel
+streamlit run app1.py
+conda create -p venv python==3.10
+Windows 10 SDK
+C++ CMake tools for Windows
+.\langchain-env\Scripts\activate

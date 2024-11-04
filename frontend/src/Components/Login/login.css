@@ -1,0 +1,99 @@
+@font-face {
+  font-family: mothwing;
+  src: url(./mothwing-demo.otf);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./login.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  height: 48vh;
+  width: 55vh;
+  padding: 3vh 5vh;
+  font-family: mothwing;
+  color: white;
+  /* background-color: black; */
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  font-family: mothwing;
+  text-align: center;
+}
+
+.wrapper .input {
+  position: relative;
+  width: 45.5vh;
+  height: 5.5vh;
+  margin: 30px 0;
+}
+
+.input input {
+  height: 5.5vh;
+  width: 45.5vh;
+  font-family: mothwing;
+  font-size: 2.5vh;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+
+.input input::placeholder {
+  color: white;
+}
+
+.input .react-icon {
+  position: absolute;
+  right: 1.2vw;
+  top: 1.3vw;
+  transform: translateY(-50%);
+  /* font-size: 16px; */
+}
+
+#btns {
+  margin-top: -0.8vw;
+}
+
+#btns .dha {
+  font-family: mothwing;
+  font-weight: bold;
+  color: rgb(0, 89, 255);
+  text-decoration: none;
+  padding: 0.6vw 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#btns button {
+  height: 3vw;
+  width: 20.6vw;
+  /* width: 45.5vh; */
+  font-family: mothwing;
+  font-size: 3.4vh;
+  font-weight: 900;
+  /* margin-top: 6.5vh; */
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  cursor: pointer;
+}
+
+/* ----------------------- Resposiveness ----------------------- */

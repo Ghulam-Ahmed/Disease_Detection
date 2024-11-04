@@ -1,0 +1,477 @@
+@font-face {
+  font-family: lh4;
+  src: url(./NeueHaasDisplayLight.ttf);
+}
+
+#upload-page {
+  background-color: #efeae3;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ------------------------- Logout Button ------------------------- */
+
+#logout {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2vw 2vw 0.8vw 2vw;
+}
+
+#logout h4 {
+  padding: 10px 20px;
+  border: 1px solid #0000006c;
+  color: #000000c0;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+#logout h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: 100%;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+
+#logout h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+#log-btn h4 .lg-btn {
+  font-family: lh4;
+  font-size: 20px;
+  color: #000000bb;
+  text-decoration: none;
+  z-index: 9;
+  position: relative;
+}
+
+#log-btn h4:hover .lg-btn {
+  color: white;
+}
+
+/* ------------------------- Circle Image ------------------------- */
+#upload-page {
+  position: relative;
+}
+
+#video-container {
+  position: absolute;
+  top: 17%;
+  left: 2%;
+}
+
+#video-container video {
+  max-width: 650px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* ------------------------- Text ------------------------- */
+@font-face {
+  font-family: Minerva;
+  src: url(./MinervaModernBlack.ttf);
+}
+
+#upload-page #text {
+  position: relative;
+  font-size: large;
+  width: 50%;
+  margin-left: 45vw;
+  margin-top: 10vh;
+  text-align: right;
+  /* margin: 12vh 55vw; */
+}
+
+#text h1 {
+  font-size: 12vh;
+  font-family: Minerva;
+}
+
+/* ------------------------- Upload Image ------------------------- */
+#upload-tag .file {
+  position: relative;
+  height: 12vw;
+  width: 12vw;
+  padding-top: 12vh;
+  margin-left: 52vw;
+  margin-top: 10vh;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  background: #e0e0e0;
+  box-shadow: 28px 28px 56px -28px -28px 56px white;
+}
+
+.icon {
+  height: 10vw;
+  width: 10vw;
+  margin-bottom: 11.5vh;
+  border-radius: 100%;
+  background-color: #00b7ff9d;
+  border: 2px dashed rgba(0, 0, 0, 0.34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  height: 12vh;
+  width: 12vh;
+}
+
+/* ------------------------- Rander Button ------------------------- */
+#upload-button-container {
+  top: 60%;
+  left: 65vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 100vh; */
+}
+
+#upload-button-container button {
+  background-color: transparent;
+  outline: 2px solid white;
+  border: solid black 2.5px;
+  font-family: lh4;
+  font-weight: bold;
+  font-size: large;
+  display: table-column;
+  border-radius: 50%;
+  text-align: center;
+  height: 5vh;
+  width: 5vw;
+  cursor: pointer;
+}
+
+/* ------------------------- Effect ------------------------- */
+#effect {
+  height: 18vw;
+  width: 18vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #089bbc, #22bbf3);
+  top: 47%;
+  left: 52%;
+  filter: blur(20px);
+  animation-name: effect;
+  animation-duration: 2.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes effect {
+  from {
+    filter: blur(15px);
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+/* ------------------------- Modal ------------------------- */
+
+#results-only {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#results-only .predict-text {
+  font-family: lh4;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 3vh;
+}
+
+#results-only .Non-XRay {
+  font-family: lh4;
+  font-size: 5vh;
+  margin-top: 5vh;
+}
+
+.modal {
+  height: 90%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  position: absolute;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.808);
+  backdrop-filter: blur(15px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.input-image {
+  width: 100%;
+  height: 40vh;
+  margin-top: 6vh;
+  margin-bottom: 5%;
+}
+
+#results-only h2 {
+  font-family: Minerva;
+  font-size: 4vh;
+}
+
+/* ------------------------- Close Button ------------------------- */
+.close-button {
+  top: -5px;
+  right: 0;
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border: none;
+  background: rgba(180, 83, 107, 0.604);
+  border-radius: 5px;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.X {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.Y {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: #fff;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  top: -70%;
+  left: 50%;
+  width: 3em;
+  height: 1.7em;
+  font-size: 12px;
+  background-color: rgb(19, 22, 24);
+  color: rgb(187, 229, 236);
+  border: none;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.close-button:hover {
+  background-color: rgb(211, 21, 21);
+}
+
+.close-button:active {
+  background-color: rgb(130, 0, 0);
+}
+
+.close-button:hover > .close {
+  animation: close-button 0.2s forwards 0.25s;
+}
+
+@keyframes close-button {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ------------------------- Download Button ------------------------- */
+.download-button {
+  --main-focus: #2d8cf0;
+  --font-color: #323232;
+  --bg-color-sub: #dedede;
+  --bg-color: #eee;
+  --main-color: #323232;
+  position: relative;
+  top: 6.5vw;
+  left: 1vw;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.download-button,
+.download-button_icon,
+.download-button_text {
+  transition: all 0.3s;
+}
+
+.download-button .download-button_text {
+  transform: translateX(1.2vw);
+  color: var(--font-color);
+  font-weight: 600;
+  font-family: Minerva;
+  font-size: 1vw;
+}
+
+.download-button .download-button_icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+.download-button:hover {
+  background: var(--bg-color);
+}
+
+.download-button:hover .download-button_text {
+  color: transparent;
+}
+
+.download-button:hover .download-button_icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.download-button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+
+/* ------------------------- Responsiveness ------------------------- */
+
+@media (max-width: 767px) {
+  #upload-page {
+    max-height: 100vh;
+    min-width: 100vw;
+  }
+
+  /* ------------------------- Logout Button ------------------------- */
+
+  #logout {
+    padding: 4vh 3vw;
+  }
+
+  #logout h4 {
+    padding: 2vh 3vh;
+    font-size: 3vh;
+  }
+
+  /* ------------------------- Circle Image ------------------------- */
+  #upload-page #cirle-img {
+    /* position: relative; */
+    /* margin: 3vh 0 0 12vh; */
+    height: 60vh;
+    width: 60vh;
+    top: 100%;
+    transform: translate(35%, -10%);
+    display: none;
+  }
+
+  /* ------------------------- Text ------------------------- */
+  #upload-page #text {
+    text-align: center;
+    margin-left: 16vw;
+    width: 70%;
+    /* margin-top: 40vh; */
+  }
+
+  #text h1 {
+    font-size: 10vw;
+  }
+
+  /* ------------------------- Upload Image ------------------------- */
+  #upload-tag .file {
+    height: 25vw;
+    width: 25vw;
+    padding-top: 12vh;
+    margin-left: 15vw;
+    margin-top: 8vh;
+  }
+
+  .icon {
+    height: 20vw;
+    width: 20vw;
+    margin-bottom: 11.5vh;
+  }
+
+  .icon img {
+    height: 12vw;
+    width: 12vw;
+  }
+
+  /* ------------------------- Effect ------------------------- */
+  #effect {
+    height: 30vw;
+    width: 30vw;
+    top: 40%;
+    left: 16%;
+    /* top: 40vh;
+    left: 20vw; */
+  }
+
+  /* ------------------------- Rander Button ------------------------- */
+  #upload-button-container {
+    top: 55%;
+    /* left: 40%; */
+    margin-left: -24vw;
+    margin-bottom: 35vw;
+    padding: 3vw 2vw;
+  }
+
+  #upload-button-container button {
+    font-size: 2.2vw;
+    height: 4.5vh;
+    width: 8.5vh;
+  }
+}

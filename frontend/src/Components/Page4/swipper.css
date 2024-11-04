@@ -1,0 +1,112 @@
+@font-face {
+  font-family: fh4;
+  src: url(./mothwing-demo.otf);
+}
+
+@font-face {
+  font-family: sp;
+  src: url(./CampuniTest-Regular.otf);
+}
+
+.p4_h5 {
+  font-family: fh4;
+  font-size: 1.2vw;
+  padding-left: 2vw;
+  padding-top: 1vw;
+  background-color: #efeae3;
+  text-transform: uppercase;
+}
+
+.dot {
+  background-color: #efeae3;
+  width: 1.5vh;
+  height: 1.5vh;
+  background-color: #73e6ff;
+  border-radius: 100vw;
+  display: inline-block;
+  align-items: center;
+  margin-right: 2vh;
+}
+
+#page4 {
+  height: 50vh;
+  width: 100%;
+  padding: 8vh 10vh;
+  background-color: #efeae3;
+}
+
+#page4 .mySwiper {
+  padding-left: 2vh;
+}
+
+.swiper {
+  height: 15vw;
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  padding: 0 2vw;
+  border-left: 1px solid #0000006c;
+}
+
+.mySwiper p {
+  font-family: sp;
+  font-weight: 100;
+  padding-top: 1vw;
+}
+
+.mySwiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.mySwiper img {
+  height: 20vh;
+}
+
+/* ----------------------- Responsiveness ----------------------- */
+@media (max-width: 767px) {
+  .p4_h5 {
+    font-size: 2.5vw;
+    padding-left: 4vw;
+  }
+
+  .dot {
+    height: 1.5vw;
+    width: 1.5vw;
+    margin-right: 2vw;
+  }
+
+  #page4 {
+    height: 60vw;
+    width: 100vw;
+    padding: 8vw 10vw;
+  }
+
+  #page4 .mySwiper {
+    padding-left: 1vw;
+  }
+
+  .swiper {
+    height: 45vw;
+    width: 100vw;
+  }
+
+  #page4 img {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  #page4 p {
+    width: 25vw;
+  }
+
+  .swiper-slide {
+    width: 30vw;
+    padding-right: 10vw;
+    padding-left: 2.5vw;
+  }
+}

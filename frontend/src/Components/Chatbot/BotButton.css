@@ -1,0 +1,87 @@
+/* .chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(174, 174, 174);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.chatbot-button:hover {
+  background-color: #0056b3;
+}
+
+.chatbot-button i {
+  font-size: 24px;
+}
+
+.chatbot-button img {
+  height: 40px;
+  width: 40px;
+} */
+
+.chatbot-button img {
+  height: 38px;
+  width: 38px;
+}
+
+.chatbot-button button {
+  position: fixed;
+  text-decoration: none;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.chatbot-button button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.chatbot-button button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+.chatbot-button button:hover::before {
+  filter: blur(20px);
+}
+
+.chatbot-button button:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}

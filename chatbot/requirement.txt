@@ -1,0 +1,11 @@
+langchain
+langchain_community
+langchain-chroma
+langchain_core
+langchainhub 
+langserve
+python-dotenv
+pypdf
+datasets
+langchain-huggingface
+sentence-transformers
